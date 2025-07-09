@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Tikko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikko - Home</title>
     <style>
         body {
             margin: 0;
@@ -12,30 +14,35 @@
             text-align: center;
         }
         header {
-            padding: 20px;
-        }
-        .logo {
-            width: 120px;
-            height: 120px;
-            animation: spin 5s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotateY(0deg); }
-            100% { transform: rotateY(360deg); }
+            padding: 30px 0 10px 0;
+            font-size: 18px;
         }
         nav a {
-            margin: 0 15px;
             color: gold;
             text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .logo-container {
+            margin-top: 40px;
+        }
+        .logo {
+            width: 200px;
+            animation: rotateLogo 5s linear infinite;
+        }
+        @keyframes rotateLogo {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(360deg); }
+        }
+        .welcome-text {
+            margin-top: 30px;
+            font-size: 22px;
+            color: gold;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/logo.png" alt="Tikko Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -44,9 +51,12 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <h1>Welcome to Tikko</h1>
-        <p>This is the official website of the Tikko Token.</p>
-    </main>
+    <div class="logo-container">
+        <img src="logo.png" alt="Tikko Logo" class="logo">
+    </div>
+    <div class="welcome-text">
+        Welcome to the Future of Currency - Tikko<br>
+        This is the official website for the Tikko cryptocurrency.
+    </div>
 </body>
 </html>
