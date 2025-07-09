@@ -3,60 +3,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tikko - Home</title>
+    <title>Tikko</title>
+    <link rel="icon" href="logo.png">
     <style>
         body {
-            margin: 0;
             background-color: #000;
             color: gold;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             text-align: center;
         }
-        header {
-            padding: 30px 0 10px 0;
-            font-size: 18px;
+        nav {
+            background-color: #000;
+            padding: 10px 0;
         }
         nav a {
             color: gold;
-            text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
         }
-        .logo-container {
-            margin-top: 40px;
+        nav a:hover {
+            text-decoration: underline;
         }
         .logo {
-            width: 200px;
-            animation: rotateLogo 5s linear infinite;
+            width: 80px;
+            height: 80px;
+            margin: 20px auto 10px;
+            animation: rotate 4s linear infinite;
         }
-        @keyframes rotateLogo {
+        @keyframes rotate {
             from { transform: rotateY(0deg); }
             to { transform: rotateY(360deg); }
         }
+        h1 {
+            margin: 10px 0 5px;
+        }
         .welcome-text {
-            margin-top: 30px;
-            font-size: 22px;
-            color: gold;
+            font-size: 16px;
+            margin: 15px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .buttons div {
+            border: 2px solid gold;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="roadmap.html">Roadmap</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <div class="logo-container">
-        <img src="logo.png" alt="Tikko Logo" class="logo">
-    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a href="index.html"><img src="logo.png" alt="Tikko Logo" class="logo"></a>
+    <h1>Tikko</h1>
     <div class="welcome-text">
-        Welcome to the Future of Currency - Tikko<br>
-        This is the official website for the Tikko cryptocurrency.
+        Welcome to Tikko<br>
+        A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.
+    </div>
+    <div class="buttons">
+        <div>Smart Blockchain</div>
+        <div>Community Driven</div>
+        <div>Golden Future</div>
+        <div>Powerful Utility</div>
     </div>
 </body>
 </html>
