@@ -2,82 +2,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tikko</title>
-    <link rel="icon" href="logo.png">
-    <style>
-        body {
-            background-color: #000;
-            color: gold;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #000;
-            padding: 10px 0;
-        }
-        nav a {
-            color: gold;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin: 20px auto 10px;
-            animation: rotate 4s linear infinite;
-        }
-        @keyframes rotate {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
-        }
-        h1 {
-            margin: 10px 0 5px;
-        }
-        .welcome-text {
-            font-size: 16px;
-            margin: 15px 0;
-        }
-        .buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .buttons div {
-            border: 2px solid gold;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tikko</title>
+  <style>
+    body {
+      background-color: black;
+      color: gold;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    nav {
+      padding: 20px 0;
+    }
+    nav a {
+      color: gold;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .logo {
+      margin: 20px auto;
+      animation: spin 8s linear infinite;
+      height: 100px;
+    }
+    @keyframes spin {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+    h1 {
+      font-size: 2em;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px;
+    }
+    .buttons .btn {
+      border: 1px solid gold;
+      padding: 10px 20px;
+      color: gold;
+      background: transparent;
+      cursor: pointer;
+    }
+    .sub-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 10px;
+    }
+    .triangle-button {
+      margin-top: 10px;
+      border: 1px solid gold;
+      padding: 10px 20px;
+      color: gold;
+      background: transparent;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <a href="index.html"><img src="logo.png" alt="Tikko Logo" class="logo"></a>
-    <h1>Tikko</h1>
-    <div class="welcome-text">
-        Welcome to Tikko<br>
-        A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.
-    </div>
-    <div class="buttons">
-        <div>Smart Blockchain</div>
-        <div>Community Driven</div>
-        <div>Golden Future</div>
-        <div>Powerful Utility</div>
-    </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Roadmap</a>
+    <a href="#">FAQ</a>
+    <a href="#">Contact</a>
+  </nav>
+  <a href="index.html">
+    <img src="assets/logo.png" alt="Tikko Logo" class="logo"/>
+  </a>
+  <h1>Tikko</h1>
+  <p>Welcome to Tikko<br/>A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.</p>
+
+  <div class="buttons">
+    <button class="btn">Smart Blockchain</button>
+    <button class="btn">Community Driven</button>
+    <button class="btn">Golden Future</button>
+  </div>
+
+  <div class="sub-buttons">
+    <button class="btn">Tikko Wallet</button>
+    <button class="btn">Tikko Pay</button>
+  </div>
+  <div>
+    <button class="triangle-button"></button>
+  </div>
 </body>
 </html>
