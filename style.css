@@ -1,21 +1,71 @@
 
 body {
-    background-color: #000;
+    background-color: black;
     color: gold;
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
-header {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
+
+nav ul {
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: black;
 }
-nav a {
-    color: gold;
-    margin: 0 10px;
+
+nav ul li a {
     text-decoration: none;
-}
-.gold {
     color: gold;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo-container {
+    margin-top: 10px;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 32px;
+    margin: 10px 0 0 0;
+}
+
+.welcome {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.buttons,
+.sub-buttons,
+.more-button {
+    margin: 10px 0;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid gold;
+    color: gold;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.more-button button {
+    font-size: 14px;
+    padding: 10px 40px;
 }

@@ -2,101 +2,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tikko</title>
-  <style>
-    body {
-      background-color: #000;
-      color: gold;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      color: gold;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    img.logo {
-      width: 100px;
-      height: 100px;
-      animation: spin 10s linear infinite;
-      margin-top: 40px;
-    }
-    @keyframes spin {
-      0% { transform: rotateY(0deg); }
-      100% { transform: rotateY(360deg); }
-    }
-    h1 {
-      font-size: 36px;
-      margin-top: 10px;
-    }
-    p.description {
-      font-size: 16px;
-      margin: 10px auto 40px;
-      max-width: 600px;
-    }
-    .button-row, .extra-row {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 10px auto;
-      flex-wrap: wrap;
-    }
-    .button-row button, .extra-button {
-      background: transparent;
-      border: 2px solid gold;
-      color: gold;
-      padding: 10px 20px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 14px;
-      text-decoration: none;
-    }
-    .extra-row .triangle {
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 20px solid gold;
-      margin: 10px auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Tikko | Official Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Roadmap</a>
-    <a href="#">FAQ</a>
-    <a href="#">Contact</a>
-  </nav>
-  <img src="logo.gif" alt="Tikko Logo" class="logo" />
-  <h1>Tikko</h1>
-  <p class="description">
-    Welcome to Tikko<br/>
-    A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.
-  </p>
-
-  <div class="button-row">
-    <button>Smart Blockchain</button>
-    <button>Community Driven</button>
-    <button>Golden Future</button>
-  </div>
-
-  <div class="button-row">
-    <a href="https://tikko-pay-ahmedalsisi1s-projects.vercel.app/index.html" class="extra-button" target="_blank">Tikko Pay</a>
-    <button class="extra-button">Tikko Wallet</button>
-  </div>
-
-  <div class="extra-row">
-    <div class="triangle"></div>
-  </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="logo-container">
+        <img src="logo.gif" alt="Tikko Logo" class="logo" onclick="location.href='index.html';">
+    </div>
+    <h1 class="title">Tikko</h1>
+    <p class="welcome">Welcome to Tikko</p>
+    <p class="desc">A visionary digital asset powered by community. A symbol of trust, value, and limitless ambition.</p>
+    <div class="buttons">
+        <button>Smart Blockchain</button>
+        <button>Community Driven</button>
+        <button>Golden Future</button>
+    </div>
+    <div class="sub-buttons">
+        <button onclick="window.open('https://tikko-pay-ahmedalsisi1s-projects.vercel.app/index.html','_blank')">Tikko Pay</button>
+        <button>Tikko Wallet</button>
+    </div>
+    <div class="more-button">
+        <button>More about Tikko</button>
+    </div>
 </body>
 </html>
